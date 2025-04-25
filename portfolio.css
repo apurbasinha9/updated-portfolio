@@ -19,7 +19,8 @@ body {
 /*header styling*/
 
 .logo {
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
+  font-size: 2vw;
   letter-spacing: 0.2rem;
   color: rgb(93, 83, 83);
 }
@@ -58,31 +59,34 @@ body {
 
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 100%;
   padding: 10px;
-  background-color: #f8f9f9;
+  background-color: #eaf3f3;
 }
 
 .summary {
   margin-left: 15px;
+  text-align: center;
   h1 {
-    /* font-size: 3.8rem; */
     font-size: 4.5vw;
     text-align: center;
-    margin-top: 25px;
     letter-spacing: 0.27rem;
+    color: rgb(66, 65, 65);
   }
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 3.5vw;
     margin-top: -10px;
     letter-spacing: 0.27rem;
+    color: rgb(94, 94, 94);
   }
 
   p {
+    font-size: 1.2vw;
     color: gray;
     margin-top: 25px;
     margin-bottom: 40px;
@@ -91,10 +95,11 @@ body {
 }
 
 .buttons {
+  padding-bottom: 15px;
   button {
     background: none;
     padding: 12px 30px;
-    font-size: 0.9rem;
+    font-size: 1vw;
     border-radius: 15px;
   }
 }
@@ -123,14 +128,13 @@ body {
 }
 
 .photo img {
-  width: 420px;
+  width: 300px;
   height: auto;
   object-fit: contain;
   max-width: 100%;
   display: block;
   border-radius: 50%;
-  /* position: relative;
-  right: 55px; */
+  padding-top: 15px;
 }
 
 /*mobile styling*/
@@ -191,16 +195,19 @@ body {
     text-align: center;
 
     h1 {
-      font-size: 1.7rem;
+      font-size: 5.2vw;
       letter-spacing: 0.21rem;
+      margin-top: 10px;
+      color: rgb(66, 65, 65);
     }
     h2 {
-      font-size: 1.2rem;
+      font-size: 4.5vw;
       letter-spacing: 0.21rem;
-      margin-top: 4px;
+      color: rgb(94, 94, 94);
+      margin-top: 2px;
     }
     p {
-      font-size: 0.7rem;
+      font-size: 2.5vw;
       text-align: center;
       margin-top: 8px;
       margin-bottom: 20px;
@@ -216,6 +223,7 @@ body {
   .buttons button {
     padding: 10px 20px;
     border-radius: 5px;
+    font-size: 2.5vw;
   }
 
   .photo {
@@ -228,15 +236,6 @@ body {
     position: static;
     width: 250px;
     box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.3);
-  }
-}
-
-/*stlying for 380px or below*/
-
-@media (max-width: 380px) {
-  .summary {
-    h1 {
-      font-size: 1.6rem !important;
-    }
+    padding-top: 0;
   }
 }
