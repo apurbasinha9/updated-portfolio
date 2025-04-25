@@ -9,7 +9,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  /* padding: 15px 30px; */
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -19,10 +19,23 @@ body {
 /*header styling*/
 
 .logo {
-  /* font-size: 1.8rem; */
   font-size: 2vw;
   letter-spacing: 0.2rem;
   color: rgb(93, 83, 83);
+}
+
+.nav-links a {
+  all: unset;
+  cursor: pointer;
+  /* padding-bottom: 4px;  */
+}
+
+.nav-links a.active {
+  /* border: 2px solid black; */
+  padding: 8px 10px;
+  background-color: rgb(93, 83, 83);
+  color: white;
+  border-radius: 5px;
 }
 
 .navbar {
