@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  /* padding: 15px 30px; */
+}
+
+.wrapper {
+  padding: 45px 100px;
+}
+
+/*header styling*/
+
+.logo {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  color: rgb(93, 83, 83);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  font-size: 1.1rem;
+  letter-spacing: 0.04rem;
+  color: rgb(93, 83, 83);
+}
+.nav-list {
+  list-style: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 30px;
+  font-weight: bold;
+}
+
+.hamberger-menu {
+  display: none;
+}
+
+/* container styling*/
+
+.container {
+  padding: 30px 0;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: #f8f9f9;
+}
+
+.summary {
+  margin-left: 15px;
+  h1 {
+    /* font-size: 3.8rem; */
+    font-size: 4.5vw;
+    text-align: center;
+    margin-top: 25px;
+    letter-spacing: 0.27rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    margin-top: -10px;
+    letter-spacing: 0.27rem;
+  }
+
+  p {
+    color: gray;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    letter-spacing: 0.27rem;
+  }
+}
+
+.buttons {
+  button {
+    background: none;
+    padding: 12px 30px;
+    font-size: 0.9rem;
+    border-radius: 15px;
+  }
+}
+
+.resume {
+  color: white;
+  background-color: rgb(7, 98, 235) !important;
+  border: none;
+  letter-spacing: 0.1rem;
+}
+
+.github {
+  margin-left: 17px;
+  border: 1px solid rgb(114, 14, 228);
+  color: rgb(114, 14, 228);
+  letter-spacing: 0.1rem;
+}
+
+.resume:hover {
+  background-color: rgb(25, 88, 189) !important;
+}
+
+.github:hover {
+  background-color: rgb(114, 14, 228);
+  color: white;
+}
+
+.photo img {
+  width: 420px;
+  height: auto;
+  object-fit: contain;
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+  /* position: relative;
+  right: 55px; */
+}
+
+/*mobile styling*/
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    padding-top: 0;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .navbar {
+    padding: 18px 35px;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: none;
+    background-color: white;
+  }
+
+  .nav-list.active {
+    display: block;
+  }
+
+  .nav-links {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .hamberger-menu {
+    display: block;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .summary {
+    text-align: center;
+
+    h1 {
+      font-size: 1.7rem;
+      letter-spacing: 0.21rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      letter-spacing: 0.21rem;
+      margin-top: 4px;
+    }
+    p {
+      font-size: 0.7rem;
+      text-align: center;
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons button {
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo img {
+    position: static;
+    width: 250px;
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/*stlying for 380px or below*/
+
+@media (max-width: 380px) {
+  .summary {
+    h1 {
+      font-size: 1.6rem !important;
+    }
+  }
+}

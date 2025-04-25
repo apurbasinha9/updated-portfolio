@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav class="navbar">
+        <h1 class="logo">My Portfolio</h1>
+        <ul id="nav-list" class="nav-list">
+          <li class="nav-links">Home</li>
+          <li class="nav-links">About</li>
+          <li class="nav-links">Projects</li>
+          <li class="nav-links">Skills</li>
+          <li class="nav-links">Contact</li>
+        </ul>
+        <div id="menu" class="hamberger-menu" onclick="showMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="about">
+          <div class="summary">
+            <h1>Hi, I'm Apurba Sinha</h1>
+            <h2>Software Developer</h2>
+            <p>
+              I build scalable and efficient web applications to <br />
+              save real-world problems
+            </p>
+            <div class="buttons">
+              <button id="resume" class="resume">Download Resume</button>
+              <button id="github" class="github">Check Github</button>
+            </div>
+          </div>
+          <div class="photo">
+            <img src="asset/profile.jpeg" alt="loading failed..." />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>
