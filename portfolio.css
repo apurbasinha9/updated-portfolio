@@ -12,6 +12,10 @@ body {
   scroll-behavior: smooth;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .wrapper {
   padding: 45px 100px;
 }
@@ -79,6 +83,7 @@ body {
   height: 100%;
   padding: 10px;
   background-color: #eaf3f3;
+  border-radius: 5px;
 }
 
 .summary {
@@ -148,6 +153,79 @@ body {
   display: block;
   border-radius: 50%;
   padding-top: 15px;
+}
+
+/*styling for experience*/
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f0e9f1;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.experience {
+  font-size: 3vw;
+  margin-bottom: 20px;
+  color: #4c749c;
+}
+
+.card-components {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
+}
+
+.card {
+  width: 30%;
+  overflow: hidden;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+‰ .card h2 {
+  font-size: 1.3vw;
+  letter-spacing: 0.1rem;
+  color: rgb(58, 58, 58);
+  padding-top: 6px;
+}
+
+.card h3 {
+  font-size: 1.1vw;
+  letter-spacing: 0.1rem;
+  color: rgb(99, 97, 97);
+}
+
+.card p {
+  padding: 20px 0;
+  font-size: 1vw;
+  color: rgb(127, 124, 124);
+  letter-spacing: 0.03rem;
+}
+
+.card button {
+  border: none;
+  padding: 10px 30px;
+  background: #6c4d9e;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card button:hover {
+  background-color: #59319b;
 }
 
 /*mobile styling*/
@@ -250,5 +328,44 @@ body {
     width: 250px;
     box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.3);
     padding-top: 0;
+  }
+
+  /* experience styling */
+
+  .projects {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .projects .card-components {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .projects .card {
+    margin-bottom: 20px;
+  }
+
+  .experience {
+    font-size: 6.1vw;
+  }
+
+  .projects h2 {
+    font-size: 5.8vw;
+    padding-top: 15px;
+  }
+
+  .projects h3 {
+    font-size: 4.9vw;
+  }
+
+  .projects p {
+    font-size: 3vw;
+  }
+
+  .projects button {
+    width: 100%;
+    padding: 10px 0;
   }
 }
