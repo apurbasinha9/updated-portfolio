@@ -7,6 +7,7 @@ let cards = document.querySelectorAll(".card");
 let investopedia = document.getElementById("investopedia");
 let fpf = document.getElementById("fpf");
 let retrevium = document.getElementById("retrevium");
+let navbar = document.getElementById("navbar");
 
 function showMenu() {
   navList.classList.toggle("active");
@@ -60,3 +61,8 @@ retrevium.addEventListener("click", () => {
     "Unfortunately, I do not have the access to the site because this is a protected website which is not public. Would be happy to give you details on what was is about."
   );
 });
+
+if (window.innerWidth <= 768) {
+  navbar.style.background = "#f0e9f1";
+  navList.style.background = "#f0e9f1";
+}
