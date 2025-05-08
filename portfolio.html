@@ -23,7 +23,7 @@
           <li class="nav-links"><a href="#">Home</a></li>
           <li class="nav-links"><a href="#about">About</a></li>
           <li class="nav-links"><a href="#experience">Experience</a></li>
-          <li class="nav-links"><a href="#">Skills</a></li>
+          <li class="nav-links"><a href="#skills">Skills</a></li>
           <li class="nav-links"><a href="#">Contact</a></li>
         </ul>
         <div id="menu" class="hamberger-menu" onclick="showMenu()">
@@ -31,7 +31,7 @@
         </div>
       </nav>
 
-      <div class="container">
+      <div id="container" class="container">
         <!-- component for about me section -->
         <div id="about" class="about">
           <div class="summary">
@@ -99,7 +99,126 @@
             </div>
           </div>
         </div>
+        <div id="skills" class="skills-container">
+          <h1>Skills</h1>
+
+          <div class="skills-bar">
+            <label for="html">HTML</label>
+            <div id="html" class="html sk">
+              <div class="h-bar percentage">95%</div>
+            </div>
+
+            <label for="css">CSS</label>
+            <div id="css" class="css sk">
+              <div class="c-bar percentage">80%</div>
+            </div>
+
+            <label for="js">JavaScript</label>
+            <div id="js" class="js sk">
+              <div class="js-bar percentage">80%</div>
+            </div>
+
+            <label for="react">React.js</label>
+            <div id="react" class="react sk">
+              <div class="r-bar percentage">65%</div>
+            </div>
+
+            <label for="node">Node.js</label>
+            <div id="node" class="node sk">
+              <div class="n-bar percentage">65%</div>
+            </div>
+
+            <label for="MySQL">MySQL</label>
+            <div id="MySQL" class="MySQL sk">
+              <div class="ms-bar percentage">70%</div>
+            </div>
+
+            <label for="git">Git</label>
+            <div id="git" class="git sk">
+              <div class="g-bar percentage">75%</div>
+            </div>
+
+            <label for="java">Java</label>
+            <div id="java" class="java sk">
+              <div class="jv-bar percentage">70%</div>
+            </div>
+
+            <label for="python">Python</label>
+            <div id="python" class="python sk">
+              <div class="p-bar percentage">80%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- contact form  -->
+        <div id="contact" class="contact-info">
+          <div id="left" class="left">
+            <p id="left-title" class="left-title">
+              Let's get connected together <br />
+              and bring changes...
+            </p>
+            <div class="call-me">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+                <p>Call me</p>
+              </div>
+              <p>+1 (709) - 327 6258</p>
+            </div>
+
+            <div class="email-me">
+              <div class="icon">
+                <i class="fa fa-envelope"></i>
+                <p>Email me</p>
+              </div>
+              <p>apurbasinha9@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="right">
+            <p id="contact-title" class="contact-title">Get in touch.</p>
+            <form action="">
+              <div class="name-email">
+                <div class="name">
+                  <p>Your name</p>
+                  <input type="text" placeholder="Enter name" required />
+                </div>
+                <div class="email">
+                  <p>Your name</p>
+                  <input type="email" placeholder="Enter email" required />
+                </div>
+              </div>
+
+              <div class="comp-name">
+                <p>Your company</p>
+                <input
+                  id="comp"
+                  type="text"
+                  placeholder="Company name"
+                  required
+                />
+              </div>
+
+              <div class="message">
+                <p>Message</p>
+                <textarea
+                  name="text"
+                  id="message"
+                  placeholder="enter your message..."
+                ></textarea>
+                <button
+                  id="message-button"
+                  class="message-button"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
+
+      <!-- wrapper container -->
     </div>
 
     <script src="portfolio.js"></script>

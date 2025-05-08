@@ -166,7 +166,8 @@ button:hover {
   width: 100%;
   height: 100%;
   /* background-color: #f0e9f1;  */
-  background-color: #d5efe4;
+  /* background-color: #d5efe4; */
+  background-color: ghostwhite;
   margin-top: 50px;
   padding: 30px;
   border-radius: 5px;
@@ -194,7 +195,7 @@ button:hover {
 
 .card-bottom {
   padding: 12px;
-  background: ghostwhite;
+  /* background: ghostwhite; */
 }
 
 .card img {
@@ -235,6 +236,203 @@ button:hover {
 
 .card button:hover {
   background-color: #59319b;
+}
+
+/* skills styling */
+
+.skills-container {
+  padding-top: 20px;
+}
+
+.skills-container h1 {
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgb(205 205 205);
+  padding-bottom: 10px;
+}
+
+.skills-bar > div {
+  margin-bottom: 20px;
+}
+
+.skills-bar label {
+  font-weight: bold;
+}
+
+.h-bar {
+  width: 95%;
+  background-color: rgb(30, 192, 21);
+}
+
+.c-bar {
+  width: 80%;
+  background-color: rgb(30, 192, 21);
+}
+
+.js-bar {
+  width: 80%;
+  background-color: rgb(30, 192, 21);
+}
+
+.r-bar {
+  width: 65%;
+  background-color: rgb(30, 192, 21);
+}
+
+.n-bar {
+  width: 65%;
+  background-color: rgb(30, 192, 21);
+}
+
+.ms-bar {
+  width: 70%;
+  background-color: rgb(30, 192, 21);
+}
+
+.g-bar {
+  width: 75%;
+  background-color: rgb(30, 192, 21);
+}
+
+.jv-bar {
+  width: 70%;
+  background-color: rgb(30, 192, 21);
+}
+
+.p-bar {
+  width: 80%;
+  background-color: rgb(30, 192, 21);
+}
+
+.sk {
+  background-color: rgb(192, 192, 192);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.percentage {
+  padding: 5px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* contact */
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.contact .left .right {
+  width: 50%;
+}
+
+.icon {
+  display: flex;
+  gap: 10px;
+}
+
+.call-me {
+  margin-bottom: 15px;
+  margin-top: 35px;
+}
+
+.left {
+  width: 100%;
+  height: 100%;
+}
+
+.left-title {
+  font-size: 2vw;
+  color: rgb(125, 123, 123);
+}
+
+.call-me,
+.email-me {
+  color: rgb(128, 126, 126);
+}
+
+.right {
+  background-color: #f5f9fb;
+  padding: 100px 50px;
+  width: 100%;
+}
+
+.contact-title {
+  font-size: 2vw;
+  padding-bottom: 20px;
+}
+
+.name-email {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.name,
+.email {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name input,
+.email input {
+  width: 100%;
+  padding: 8px;
+}
+
+.comp-name input {
+  width: 100%;
+  padding: 8px;
+}
+
+.message input {
+  width: 100%;
+}
+
+.message {
+  margin-top: 20px;
+}
+
+.message-button {
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.2vw;
+  background: #07aced;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.message-button:hover {
+  background-color: #1a8bb8;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+
+.contact-info input,
+textarea {
+  border: none;
+}
+
+.contact-info input::placeholder {
+  padding: 4px;
+  color: rgb(164, 164, 164);
+}
+
+.contact-info textarea::placeholder {
+  padding: 4px;
+  color: rgb(164, 164, 164);
 }
 
 /*mobile styling*/
@@ -377,6 +575,33 @@ button:hover {
   .projects button {
     width: 100%;
     padding: 10px 0;
+  }
+
+  /* skill styling */
+
+  .skills-container {
+    padding: 15px;
+  }
+
+  .skills-container h1 {
+    font-size: 7.5vw;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgb(205 205 205);
+    padding-bottom: 10px;
+  }
+
+  .skills-bar {
+    text-align: center;
+  }
+
+  .skills-bar label {
+    font-weight: bold;
+  }
+
+  /* contact styling */
+
+  .contact-info {
+    flex-direction: column-reverse;
   }
 }
 
