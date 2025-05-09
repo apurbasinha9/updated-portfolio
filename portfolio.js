@@ -88,3 +88,18 @@ if (window.innerWidth <= 768) {
   messageButton.style.width = "100%";
   container.style.paddingBottom = "0";
 }
+
+function sendMail() {
+  var parms = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    company: document.getElementById("company").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs
+    .send("service_n9dll98", "template_34ihn49", parms)
+    .then(function (ress) {
+      alert("sent");
+    });
+}

@@ -256,7 +256,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.skills-bar label {
+.skills-bar p {
   font-weight: bold;
 }
 
@@ -594,7 +594,7 @@ textarea {
     text-align: center;
   }
 
-  .skills-bar label {
+  .skills-bar p {
     font-weight: bold;
   }
 

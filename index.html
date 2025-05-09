@@ -13,6 +13,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "Iehns7asObyUxtBOa",
+        });
+      })();
+    </script>
   </head>
 
   <body>
@@ -103,47 +114,47 @@
           <h1>Skills</h1>
 
           <div class="skills-bar">
-            <label for="html">HTML</label>
+            <p for="html">HTML</p>
             <div id="html" class="html sk">
               <div class="h-bar percentage">95%</div>
             </div>
 
-            <label for="css">CSS</label>
+            <p for="css">CSS</p>
             <div id="css" class="css sk">
               <div class="c-bar percentage">80%</div>
             </div>
 
-            <label for="js">JavaScript</label>
+            <p for="js">JavaScript</p>
             <div id="js" class="js sk">
               <div class="js-bar percentage">80%</div>
             </div>
 
-            <label for="react">React.js</label>
+            <p for="react">React.js</p>
             <div id="react" class="react sk">
               <div class="r-bar percentage">65%</div>
             </div>
 
-            <label for="node">Node.js</label>
+            <p for="node">Node.js</p>
             <div id="node" class="node sk">
               <div class="n-bar percentage">65%</div>
             </div>
 
-            <label for="MySQL">MySQL</label>
+            <p for="MySQL">MySQL</p>
             <div id="MySQL" class="MySQL sk">
               <div class="ms-bar percentage">70%</div>
             </div>
 
-            <label for="git">Git</label>
+            <p for="git">Git</p>
             <div id="git" class="git sk">
               <div class="g-bar percentage">75%</div>
             </div>
 
-            <label for="java">Java</label>
+            <p for="java">Java</p>
             <div id="java" class="java sk">
               <div class="jv-bar percentage">70%</div>
             </div>
 
-            <label for="python">Python</label>
+            <p for="python">Python</p>
             <div id="python" class="python sk">
               <div class="p-bar percentage">80%</div>
             </div>
@@ -176,22 +187,35 @@
 
           <div class="right">
             <p id="contact-title" class="contact-title">Get in touch.</p>
-            <form action="">
+            <form>
               <div class="name-email">
                 <div class="name">
                   <p>Your name</p>
-                  <input type="text" placeholder="Enter name" required />
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Enter name"
+                    required
+                  />
                 </div>
                 <div class="email">
-                  <p>Your name</p>
-                  <input type="email" placeholder="Enter email" required />
+                  <p>Your email</p>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter email"
+                    required
+                  />
                 </div>
               </div>
 
               <div class="comp-name">
                 <p>Your company</p>
                 <input
-                  id="comp"
+                  name="company"
+                  id="company"
                   type="text"
                   placeholder="Company name"
                   required
@@ -201,14 +225,15 @@
               <div class="message">
                 <p>Message</p>
                 <textarea
-                  name="text"
+                  name="message"
                   id="message"
                   placeholder="enter your message..."
                 ></textarea>
                 <button
                   id="message-button"
                   class="message-button"
-                  type="submit"
+                  type="button"
+                  onclick="sendMail()"
                 >
                   Send
                 </button>
